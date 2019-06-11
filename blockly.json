@@ -3,7 +3,7 @@
     "telecar_create",
     "telecar_move"
   ],
-  "category": "telecar",
+  "category": "catTelecar",
   "scripts": [
     "https://cdn.jsdelivr.net/gh/yarrem/stringFormat.js/format.js",
     "telecar-blockly.js",
