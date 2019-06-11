@@ -21,16 +21,10 @@
             console.log("opened");
             window.setTimeout(function () {
                 console.log("send "), tmp.send("N");
-            }, 1 * 500);
+            }, 1 * 1000);
             window.setTimeout(function () {
                 console.log("send "), tmp.send("S");
-            }, 2 * 500);
-            window.setTimeout(function () {
-                console.log("send "), tmp.send("W");
-            }, 3 * 500);
-            window.setTimeout(function () {
-                console.log("send "), tmp.send("E");
-            }, 4 * 500);
+            }, 2 * 1000);
         };
 
         tmp.onmessage = function (evt) {
