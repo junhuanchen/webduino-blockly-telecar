@@ -3,7 +3,7 @@
   <block type="variables_set">
     <field name="VAR" id="=S{3@+J#.JCL.N}p|Fq:" variabletype="">telecar</field>
     <value name="VALUE">
-      <block type="telecar_new">
+      <block type="telecar_create">
         <field name="address">ws://espressif</field>
       </block>
     </value>
