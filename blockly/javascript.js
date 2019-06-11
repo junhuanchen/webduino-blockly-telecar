@@ -1,21 +1,16 @@
 
-Blockly.JavaScript['itpk_clear'] = function(block) {
+Blockly.JavaScript['telecar_move'] = function(block) {
+  var variable_telecar = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('telecar'), Blockly.Variables.NAME_TYPE);
+  var dropdown_move = block.getFieldValue('move');
   // TODO: Assemble JavaScript into code variable.
-  var code = itpk_clear();
+  var code = '{0};\n'.format(telecar_move(variable_telecar, dropdown_move));
   return code;
 };
 
-Blockly.JavaScript['itpk_answer'] = function(block) {
+Blockly.JavaScript['telecar_create'] = function(block) {
+  var text_address = block.getFieldValue('address');
   // TODO: Assemble JavaScript into code variable.
-  var code = itpk_answer();;
+  var code = telecar_create(text_address);
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
-};
-
-Blockly.JavaScript['itpk_ask'] = function(block) {
-  var value_question = Blockly.JavaScript.valueToCode(block, 'question', Blockly.JavaScript.ORDER_ATOMIC);
-  var statements_callback = Blockly.JavaScript.statementToCode(block, 'callback');
-  // TODO: Assemble JavaScript into code variable.
-  var code = '{0};\n'.format(itpk_quick_ask(value_question, statements_callback));
-  return code;
 };

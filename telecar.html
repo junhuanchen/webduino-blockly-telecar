@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>遥控小车 API 测试</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <script>
+        telecar_move = function (arrow) {
+            $.get("http://192.168.30.139/move", {
+                'arrow': arrow
+            }, function (data) {
+                console.log("data: " + data);
+            });
+        }
+
+        function unit_test() {
+            window.setTimeout(function () {
+                telecar_move('N');
+            }, 1 * 250);
+            window.setTimeout(function () {
+                telecar_move('S');
+            }, 2 * 250);
+            window.setTimeout(function () {
+                telecar_move('W');
+            }, 3 * 250);
+            window.setTimeout(function () {
+                telecar_move('E');
+            }, 4 * 250);
+        }
+
+    </script>
+    <script type="text/javascript">
+
+        if ("WebSocket" in window) {
+            // alert("Your browser supports WebSocket!");
+        } else {
+            // alert("Your browser does not support WebSocket!");
+        }
+
+        var ws = new WebSocket("ws://192.168.30.139");
+
+        ws.onopen = function () {
+            window.setTimeout(function () {
+                console.log("send "), ws.send("N");
+            }, 1 * 50);
+            window.setTimeout(function () {
+                console.log("send "), ws.send("S");
+            }, 2 * 50);
+            window.setTimeout(function () {
+                console.log("send "), ws.send("W");
+            }, 3 * 50);
+            window.setTimeout(function () {
+                console.log("send "), ws.send("E");
+            }, 4 * 50);
+        };
+
+        ws.onmessage = function (evt) {
+            var received_msg = evt.data;
+            console.log("recv", received_msg);
+        };
+
+        ws.onclose = function () {
+            // close websocket
+        };
+
+    </script>
+</body>
+
+</html>

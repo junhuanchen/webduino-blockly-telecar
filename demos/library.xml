@@ -1,123 +1,103 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"><block type="factory_base" id="U^?3%:P(=)2:TDhvw00Z" deletable="false" movable="false" x="10" y="10">
+<xml xmlns="http://www.w3.org/1999/xhtml"><block type="factory_base" id="O#Ljm21T;XV]C^QwWY%#" deletable="false" movable="false" x="10" y="10">
     <mutation connections="BOTH"></mutation>
-    <field name="NAME">itpk_clear</field>
+    <field name="NAME">telecar_move</field>
     <field name="INLINE">AUTO</field>
     <field name="CONNECTIONS">BOTH</field>
     <statement name="INPUTS">
-      <block type="input_dummy" id="Kth]`O444xn6#/DO284z">
+      <block type="input_dummy" id="Q,QKv+iyo|9EerSPH[{+">
         <field name="ALIGN">LEFT</field>
         <statement name="FIELDS">
-          <block type="field_static" id="K)n%^^/JrnGj@MFXH==l">
-            <field name="TEXT">itpk_clear</field>
+          <block type="field_static" id="J-P0YEZMzaCOJ3t)K*w[">
+            <field name="TEXT">遥控车</field>
+            <next>
+              <block type="field_variable" id=";%0Lbog2GgS:J`gY(CAU">
+                <field name="TEXT">telecar</field>
+                <field name="FIELDNAME">telecar</field>
+                <next>
+                  <block type="field_dropdown" id="nL=?m,pOl;h#Vq)JC7.c">
+                    <mutation options="[&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;]"></mutation>
+                    <field name="FIELDNAME">move</field>
+                    <field name="USER0">前进 ↑</field>
+                    <field name="CPU0">N</field>
+                    <field name="USER1">后退 ↓</field>
+                    <field name="CPU1">S</field>
+                    <field name="USER2">左转 ←</field>
+                    <field name="CPU2">W</field>
+                    <field name="USER3">右转 →</field>
+                    <field name="CPU3">E</field>
+                  </block>
+                </next>
+              </block>
+            </next>
           </block>
         </statement>
       </block>
     </statement>
     <value name="TOOLTIP">
-      <block type="text" id="/_fpl(w}RFpBh;g~)vJC" deletable="false" movable="false">
+      <block type="text" id="IG)XvGl[,b`*fcRWK!)I" deletable="false" movable="false">
         <field name="TEXT"></field>
       </block>
     </value>
     <value name="HELPURL">
-      <block type="text" id="},3$R_ZSYe9s_oQw`)9L" deletable="false" movable="false">
+      <block type="text" id="wMiQ7]yD%%Dbj=v1=#[5" deletable="false" movable="false">
         <field name="TEXT"></field>
       </block>
     </value>
     <value name="TOPTYPE">
-      <shadow type="type_null" id="}{)i%DPL5?Tal-w3$jRX"></shadow>
+      <shadow type="type_null" id="!:$]C7d?ecbkL_%cT+R:"></shadow>
     </value>
     <value name="BOTTOMTYPE">
-      <shadow type="type_null" id="aR`@D}Hc.CAAr:8f=TJ9"></shadow>
+      <shadow type="type_null" id="Iyg..F-frCV%BqjHE#4R"></shadow>
     </value>
     <value name="COLOUR">
-      <block type="colour_hue" id="w2@,1-jD_iUD/mohn`kC">
-        <mutation colour="#5ba58c"></mutation>
-        <field name="HUE">160</field>
+      <block type="colour_hue" id="fY3`%SgtnSwlX-NGx4is">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
       </block>
     </value>
-  </block><block type="factory_base" id="U^?3%:P(=)2:TDhvw00Z" deletable="false" movable="false" x="10" y="10">
+  </block><block type="factory_base" id="+(]uU}]T/Ol.oW`2Kx-O" deletable="false" movable="false" x="10" y="10">
     <mutation connections="LEFT"></mutation>
-    <field name="NAME">itpk_answer</field>
+    <field name="NAME">telecar_create</field>
     <field name="INLINE">AUTO</field>
     <field name="CONNECTIONS">LEFT</field>
     <statement name="INPUTS">
-      <block type="input_dummy" id="Kth]`O444xn6#/DO284z">
+      <block type="input_dummy" id="-wn(b/x3f44,)!.PI}WO">
         <field name="ALIGN">LEFT</field>
         <statement name="FIELDS">
-          <block type="field_static" id="K)n%^^/JrnGj@MFXH==l">
-            <field name="TEXT">itpk_answer</field>
+          <block type="field_static" id="]3-NWMqpH;e2nq!~EtE[">
+            <field name="TEXT">连接到</field>
+            <next>
+              <block type="field_input" id="G=vF#T7_9bPvLZZB7HY$">
+                <field name="TEXT">ws://espressif</field>
+                <field name="FIELDNAME">address</field>
+                <next>
+                  <block type="field_static" id="6xluH3=H`HtHPa}kutT%">
+                    <field name="TEXT">的遥控车</field>
+                  </block>
+                </next>
+              </block>
+            </next>
           </block>
         </statement>
       </block>
     </statement>
     <value name="TOOLTIP">
-      <block type="text" id="/_fpl(w}RFpBh;g~)vJC" deletable="false" movable="false">
+      <block type="text" id="-lTvhA4:;Lm6*w0,%2GT" deletable="false" movable="false">
         <field name="TEXT"></field>
       </block>
     </value>
     <value name="HELPURL">
-      <block type="text" id="},3$R_ZSYe9s_oQw`)9L" deletable="false" movable="false">
+      <block type="text" id="yt`WiizN.ig#q-p95U{D" deletable="false" movable="false">
         <field name="TEXT"></field>
       </block>
     </value>
     <value name="OUTPUTTYPE">
-      <shadow type="type_null" id="nT@kBB|vj44UZx+[!z|M"></shadow>
+      <shadow type="type_null" id="7zZ-hO`~yU)$I3+F|q}f"></shadow>
     </value>
     <value name="COLOUR">
-      <block type="colour_hue" id="|,xWJlGDmGf|?Jb8lZ(P">
-        <mutation colour="#5ba58c"></mutation>
-        <field name="HUE">160</field>
-      </block>
-    </value>
-  </block><block type="factory_base" id="W!n2Cp.hLx|zhcZ{@$Jm" deletable="false" movable="false" x="10" y="10">
-    <mutation connections="BOTH"></mutation>
-    <field name="NAME">itpk_ask</field>
-    <field name="INLINE">AUTO</field>
-    <field name="CONNECTIONS">BOTH</field>
-    <statement name="INPUTS">
-      <block type="input_value" id="|WtN5=h;h;^QB~EU$P2o">
-        <field name="INPUTNAME">question</field>
-        <field name="ALIGN">LEFT</field>
-        <statement name="FIELDS">
-          <block type="field_static" id="|WGaJ}W!@TL*iXM=Db}z">
-            <field name="TEXT">itpk_ask</field>
-          </block>
-        </statement>
-        <value name="TYPE">
-          <shadow type="type_null" id="bL{Wr|~r;W]`Xse5FmSE"></shadow>
-          <block type="type_string" id="yk_|S3}rEizB*s3~vM8%"></block>
-        </value>
-        <next>
-          <block type="input_statement" id="0.?w:wPh.)L3L?6{UQL7">
-            <field name="INPUTNAME">callback</field>
-            <field name="ALIGN">LEFT</field>
-            <value name="TYPE">
-              <shadow type="type_null" id="RXR1QY(]9pG+_@2@Bcl:"></shadow>
-            </value>
-          </block>
-        </next>
-      </block>
-    </statement>
-    <value name="TOOLTIP">
-      <block type="text" id="_PWg9GPgyg*(I()/Z+L`" deletable="false" movable="false">
-        <field name="TEXT"></field>
-      </block>
-    </value>
-    <value name="HELPURL">
-      <block type="text" id="W#L[Ou]t[#J)z6xO+Wm+" deletable="false" movable="false">
-        <field name="TEXT"></field>
-      </block>
-    </value>
-    <value name="TOPTYPE">
-      <shadow type="type_null" id="FBjzTsmUgC[BEGbL(|7P"></shadow>
-    </value>
-    <value name="BOTTOMTYPE">
-      <shadow type="type_null" id="ZmSe|F83S51E=)Dh-*do"></shadow>
-    </value>
-    <value name="COLOUR">
-      <block type="colour_hue" id="Nu~m:`b*%4]E+qmIGwxm">
-        <mutation colour="#5ba58c"></mutation>
-        <field name="HUE">160</field>
+      <block type="colour_hue" id="SR;_FMVH,|L1RXV{-TBU">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
       </block>
     </value>
   </block></xml>

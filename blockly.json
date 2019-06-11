@@ -1,18 +1,17 @@
 {
   "types": [
-    "itpk_ask",
-    "itpk_answer",
-    "itpk_clear"
+    "telecar_create",
+    "telecar_move"
   ],
-  "category": "itpk",
+  "category": "telecar",
   "scripts": [
     "https://cdn.jsdelivr.net/gh/yarrem/stringFormat.js/format.js",
-    "itpk-blockly.js",
+    "telecar-blockly.js",
     "blockly/blocks.js",
     "blockly/javascript.js"
   ],
   "dependencies": [
-    "itpk.js"
+    "telecar.js"
   ],
   "msg": "blockly/msg",
   "blocksMsg": "blockly/msg/blocks",

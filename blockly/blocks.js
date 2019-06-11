@@ -1,36 +1,25 @@
-Blockly.Blocks['itpk_clear'] = {
+Blockly.Blocks['telecar_move'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField(Blockly.Msg.itpk_clear);
+        .appendField("遥控车")
+        .appendField(new Blockly.FieldVariable("telecar"), "telecar")
+        .appendField(new Blockly.FieldDropdown([["前进 ↑","N"], ["后退 ↓","S"], ["左转 ←","W"], ["右转 →","E"]]), "move");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(315);
+    this.setColour(230);
  this.setTooltip("");
  this.setHelpUrl("");
   }
 };
 
-Blockly.Blocks['itpk_answer'] = {
+Blockly.Blocks['telecar_create'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField(Blockly.Msg.itpk_answer);
+        .appendField("连接到")
+        .appendField(new Blockly.FieldTextInput("ws://192.168.30.139"), "address")
+        .appendField("的遥控车");
     this.setOutput(true, null);
-    this.setColour(315);
- this.setTooltip("");
- this.setHelpUrl("");
-  }
-};
-
-Blockly.Blocks['itpk_ask'] = {
-  init: function() {
-    this.appendValueInput("question")
-        .setCheck("String")
-        .appendField(Blockly.Msg.itpk_ask);
-    this.appendStatementInput("callback")
-        .setCheck(null);
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setColour(315);
+    this.setColour(230);
  this.setTooltip("");
  this.setHelpUrl("");
   }

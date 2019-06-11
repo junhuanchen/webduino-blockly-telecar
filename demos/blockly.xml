@@ -1,20 +1,167 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="itpk_ask" id="T?FyvoA[6?k|}eo?=+OK" x="88" y="38">
-    <value name="question">
-      <block type="text" id="6@rG{I3N-*lJ-Mhk(b5O">
-        <field name="TEXT">今天东莞天气如何？</field>
+  <block type="board" id="/l5(7eBeo7DB=l++3LjQ" x="13" y="137">
+    <field name="type_">5</field>
+    <field name="rate_">250</field>
+    <field name="check_">FALSE</field>
+    <field name="multi_">FALSE</field>
+    <value name="device_">
+      <block type="text" id="iFS=M*q:/p*y8F:p3N/6">
+        <field name="TEXT">1234</field>
       </block>
     </value>
-    <statement name="callback">
-      <block type="console" id="a}XjMJSAI!8}M{kzD]w[">
-        <value name="console">
-          <block type="itpk_answer" id="mf{)PkbxP|)NF4u8Z[:X"></block>
+    <statement name="callbacks_">
+      <block type="variables_set" id="GX?n03tU?^kD.]~yxx)G">
+        <field name="VAR">matrix</field>
+        <value name="VALUE">
+          <block type="matrix_new" id="gIJn~lyG]E`L7S.;*uY."></block>
         </value>
         <next>
-          <block type="demo_show_text" id="CMP)v_%{X2)S~,K_iK0q">
-            <value name="show_">
-              <block type="itpk_answer" id="moT@soH[zrAWHP7Cx~mf"></block>
-            </value>
+          <block type="document_keyboard" id="m~WcRn;c7:!P,n^*l3#D">
+            <field name="event_">onkeydown</field>
+            <statement name="do_">
+              <block type="document_keycode" id="oH@SpB~0LIu]LyY)XP*t">
+                <field name="keycode_">38</field>
+                <statement name="do_">
+                  <block type="matrix_color" id="_Z^i+4O:j1LExvjjj6?O">
+                    <field name="matrix_">matrix</field>
+                    <field name="mcolor_">#ff0000</field>
+                    <field name="led_0_">#000000</field>
+                    <field name="led_1_">#000000</field>
+                    <field name="led_2_">#FF0000</field>
+                    <field name="led_3_">#000000</field>
+                    <field name="led_4_">#000000</field>
+                    <field name="led_5_">#000000</field>
+                    <field name="led_6_">#FF0000</field>
+                    <field name="led_7_">#000000</field>
+                    <field name="led_8_">#000000</field>
+                    <field name="led_9_">#000000</field>
+                    <field name="led_10_">#FF0000</field>
+                    <field name="led_11_">#FF0000</field>
+                    <field name="led_12_">#FF0000</field>
+                    <field name="led_13_">#FF0000</field>
+                    <field name="led_14_">#FF0000</field>
+                    <field name="led_15_">#000000</field>
+                    <field name="led_16_">#FF0000</field>
+                    <field name="led_17_">#000000</field>
+                    <field name="led_18_">#000000</field>
+                    <field name="led_19_">#000000</field>
+                    <field name="led_20_">#000000</field>
+                    <field name="led_21_">#000000</field>
+                    <field name="led_22_">#FF0000</field>
+                    <field name="led_23_">#000000</field>
+                    <field name="led_24_">#000000</field>
+                  </block>
+                </statement>
+                <next>
+                  <block type="document_keycode" id="H;iIQE7=+Sq%5nrMhGyF">
+                    <field name="keycode_">40</field>
+                    <statement name="do_">
+                      <block type="matrix_color" id="ddDBjVkB_^%b]CI7]e_:">
+                        <field name="matrix_">matrix</field>
+                        <field name="mcolor_">#ff0000</field>
+                        <field name="led_0_">#000000</field>
+                        <field name="led_1_">#000000</field>
+                        <field name="led_2_">#FF0000</field>
+                        <field name="led_3_">#000000</field>
+                        <field name="led_4_">#000000</field>
+                        <field name="led_5_">#000000</field>
+                        <field name="led_6_">#000000</field>
+                        <field name="led_7_">#000000</field>
+                        <field name="led_8_">#FF0000</field>
+                        <field name="led_9_">#000000</field>
+                        <field name="led_10_">#FF0000</field>
+                        <field name="led_11_">#FF0000</field>
+                        <field name="led_12_">#FF0000</field>
+                        <field name="led_13_">#FF0000</field>
+                        <field name="led_14_">#FF0000</field>
+                        <field name="led_15_">#000000</field>
+                        <field name="led_16_">#000000</field>
+                        <field name="led_17_">#000000</field>
+                        <field name="led_18_">#FF0000</field>
+                        <field name="led_19_">#000000</field>
+                        <field name="led_20_">#000000</field>
+                        <field name="led_21_">#000000</field>
+                        <field name="led_22_">#FF0000</field>
+                        <field name="led_23_">#000000</field>
+                        <field name="led_24_">#000000</field>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="document_keycode" id="ik*=0z%sk@fh*Y{2.fej">
+                        <field name="keycode_">37</field>
+                        <statement name="do_">
+                          <block type="matrix_color" id="H..^L%-/N~rew[aKzOl-">
+                            <field name="matrix_">matrix</field>
+                            <field name="mcolor_">#ff0000</field>
+                            <field name="led_0_">#000000</field>
+                            <field name="led_1_">#000000</field>
+                            <field name="led_2_">#FF0000</field>
+                            <field name="led_3_">#000000</field>
+                            <field name="led_4_">#000000</field>
+                            <field name="led_5_">#000000</field>
+                            <field name="led_6_">#FF0000</field>
+                            <field name="led_7_">#FF0000</field>
+                            <field name="led_8_">#FF0000</field>
+                            <field name="led_9_">#000000</field>
+                            <field name="led_10_">#FF0000</field>
+                            <field name="led_11_">#000000</field>
+                            <field name="led_12_">#FF0000</field>
+                            <field name="led_13_">#000000</field>
+                            <field name="led_14_">#FF0000</field>
+                            <field name="led_15_">#000000</field>
+                            <field name="led_16_">#000000</field>
+                            <field name="led_17_">#FF0000</field>
+                            <field name="led_18_">#000000</field>
+                            <field name="led_19_">#000000</field>
+                            <field name="led_20_">#000000</field>
+                            <field name="led_21_">#000000</field>
+                            <field name="led_22_">#FF0000</field>
+                            <field name="led_23_">#000000</field>
+                            <field name="led_24_">#000000</field>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="document_keycode" id="p95~B`xBV~wzm4)JRKnx">
+                            <field name="keycode_">39</field>
+                            <statement name="do_">
+                              <block type="matrix_color" id="]zv|x_cWHN|vpbs/oEC{">
+                                <field name="matrix_">matrix</field>
+                                <field name="mcolor_">#000000</field>
+                                <field name="led_0_">#000000</field>
+                                <field name="led_1_">#000000</field>
+                                <field name="led_2_">#FF0000</field>
+                                <field name="led_3_">#000000</field>
+                                <field name="led_4_">#000000</field>
+                                <field name="led_5_">#000000</field>
+                                <field name="led_6_">#000000</field>
+                                <field name="led_7_">#FF0000</field>
+                                <field name="led_8_">#000000</field>
+                                <field name="led_9_">#000000</field>
+                                <field name="led_10_">#FF0000</field>
+                                <field name="led_11_">#000000</field>
+                                <field name="led_12_">#FF0000</field>
+                                <field name="led_13_">#000000</field>
+                                <field name="led_14_">#FF0000</field>
+                                <field name="led_15_">#000000</field>
+                                <field name="led_16_">#FF0000</field>
+                                <field name="led_17_">#FF0000</field>
+                                <field name="led_18_">#FF0000</field>
+                                <field name="led_19_">#000000</field>
+                                <field name="led_20_">#000000</field>
+                                <field name="led_21_">#000000</field>
+                                <field name="led_22_">#FF0000</field>
+                                <field name="led_23_">#000000</field>
+                                <field name="led_24_">#000000</field>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
           </block>
         </next>
       </block>

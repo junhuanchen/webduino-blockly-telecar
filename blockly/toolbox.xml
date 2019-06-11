@@ -1,30 +1,21 @@
-<category id="catItpk">
-  <block type="itpk_ask">
-    <value name="question">
-      <block type="text">
-        <field name="TEXT">今天东莞天气如何？</field>
+<category id="catTelecar">
+
+  <block type="variables_set">
+    <field name="VAR" id="=S{3@+J#.JCL.N}p|Fq:" variabletype="">telecar</field>
+    <value name="VALUE">
+      <block type="telecar_new">
+        <field name="address">ws://espressif</field>
       </block>
     </value>
-  </block>
-  <block type="console">
-    <value name="console">
-      <block type="itpk_answer"></block>
-    </value>
-  </block>
-  <block type="itpk_clear">
-  </block>
-  <block type="itpk_ask">
-    <value name="question">
-      <block type="text">
-        <field name="TEXT"> IP </field>
+    <next>
+      <block type="telecar_move">
+        <field name="telecar" id="=S{3@+J#.JCL.N}p|Fq:" variabletype="">telecar</field>
+        <field name="move">S</field>
       </block>
-    </value>
-    <statement name="callback">
-    <block type="console">
-      <value name="console">
-        <block type="itpk_answer"></block>
-      </value>
-    </block>
-    </statement>
+    </next>
+  </block>
+  <block type="telecar_move">
+    <field name="telecar" id="=S{3@+J#.JCL.N}p|Fq:" variabletype="">telecar</field>
+    <field name="move">N</field>
   </block>
 </category>

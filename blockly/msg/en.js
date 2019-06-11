@@ -1,1 +1,1 @@
-MSG.catItpk = 'Itpk Robot';
+MSG.catTelecar = 'Bpi Telecar';

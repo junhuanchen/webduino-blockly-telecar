@@ -1,1 +1,1 @@
-MSG.catItpk = '茉莉 機器人';
+MSG.catTelecar = 'Bpi Telecar';

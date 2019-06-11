@@ -1,12 +1,6 @@
-# webduino-blockly-template
+# webduino-blockly-telecar
 
-This is a webduino block template that implements the API of itpk robot.
-
-这是一个实现茉莉机器人 API 接口的 Blockly 积木模板。
-
-Using classic JavaScript development, you can complete the development of dynamic building blocks.
-
-使用经典的 JavaScript 开发，就可以完成动态积木的开发。
+无线遥控车
 
 ## Help docs
 
@@ -18,7 +12,7 @@ Using classic JavaScript development, you can complete the development of dynami
 
 Load the plug-in first, then continue.
 
-`https://bpi.org.cn/webduino-blockly-template/blockly.json`
+`https://junhuanchen.github.io/webduino-blockly-telecar/blockly.json`
 
 ## Usage
 
@@ -35,13 +29,3 @@ open the link [demo](https://bit.webduino.com.cn/blockly/?demo=demo-area-01#qZzE
 在 Blockly Tools 里 import 该文件。
 
 load the file ([demos/library.xml](demos/library.xml))
-
-## About
-
-查阅 API 地址：
-
-[API Docs](http://www.itpk.cn/robot.php)
-
-## Demo
-
-![demo](demo.png)
